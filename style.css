@@ -1,0 +1,100 @@
+body{
+    background-image:url(teglafal.jpg) ;
+    font-family: Arial, Verdana, sans-serif;
+    color: beige;
+    font-size: 10pt;
+}
+main{
+    background-color: #333333;
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-areas: "h h h "
+                        "ar ar n "
+                        "f f f";
+}
+header{
+    background-image: url(beer-new_401732638.jpg);
+    grid-area: h;
+    font-weight:bold ;
+    height: 300px;
+    background-size: cover;
+
+}
+header h1{
+    letter-spacing: 4px;
+    font-size: 32px;
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+article{
+    box-sizing:border-box;
+    grid-area: ar;
+    font-size: 10px;
+    background-color: #333333;
+    border: beige solid 1px;
+    max-width: 700px;
+    max-height: fit-content;
+
+}
+article h3{
+    font-size: 15px;
+}
+article img{
+    float: left;
+    max-width: 200px;
+    border: gainsboro solid 2px;
+    margin: 10px;
+}
+article ul li{
+    list-style: armenian;
+    text-align: justify;
+    
+}
+article ul{
+    padding: 20px;
+}
+nav{
+    grid-area: n;
+    color: red;
+}
+nav ul li{
+    text-decoration: none;
+    list-style: disc;
+}
+footer{
+    grid-area: f;
+    text-align: center;
+    background-color: gainsboro;
+
+}
+table, td, th {  
+    border: 1px solid #ddd;
+    text-align: center;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+th{
+    text-align: center;
+}
+td{
+    text-align: center;
+}
+.szines{
+    background: gray;
+}
+@media only screen and (max-width: 700px) {
+    main{
+        display: grid;
+        grid-template-areas: "h"
+        "ar"
+        "n"
+        "f"
+        ;
+    }
+    }
